@@ -1,0 +1,216 @@
+<?xml version = "1.0"?>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
+<html xmlns = "http://www.w3.org/1999/xhtml">
+<head>
+<meta rel="icon" href="Java\classes\WebKaraoke\images\file.ico">
+<title>KARAOKE_TEST.zip_TEST.gif</title>
+<meta http-equiv="Content-Type" content="text/html;">
+<script language="JavaScript" type="text/JavaScript">
+<!-- used to change colors of the header
+//function get_color(color_num)
+//{
+//var now_color=color_num;
+//var my_color= new Array(5)
+ //my_color[0]="#9999FF";//#9933FF
+ //my_color[1]="#9999FF";
+ //my_color[2]="#9999FF";
+ //my_color[3]="#3333FF";
+ //my_color[4]="ghostwhite";
+//document.bgColor=my_color[now_color];
+//}
+
+function swit1(){
+//keep imgs set
+var sPath = parent.mainframe.location;
+document.getElementById('KARAOKE').src = "KARAOKE_TEST.zip_r1_c1_f3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c2').src = "KARAOKE_TEST.zip_r1_c2.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c3').src = "KARAOKE_TEST.zip_r1_c3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c4').src = "KARAOKE_TEST.zip_r1_c4.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c6').src = "KARAOKE_TEST.zip_r1_c6.gif";
+
+//get_color(0);
+}
+function swit2(){
+//keep imgs set
+document.getElementById('KARAOKE').src = "KARAOKE_TEST.zip_r1_c1.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c2').src = "KARAOKE_TEST.zip_r1_c2_f3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c3').src = "KARAOKE_TEST.zip_r1_c3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c4').src = "KARAOKE_TEST.zip_r1_c4.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c6').src = "KARAOKE_TEST.zip_r1_c6.gif";
+
+//ID = window.setTimeout("get_color(1);", 45);
+}
+function swit3(){
+document.getElementById('KARAOKE').src = "KARAOKE_TEST.zip_r1_c1.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c2').src = "KARAOKE_TEST.zip_r1_c2.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c3').src = "KARAOKE_TEST.zip_r1_c3_f3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c4').src = "KARAOKE_TEST.zip_r1_c4.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c6').src = "KARAOKE_TEST.zip_r1_c6.gif";
+//get_color(2);
+}
+function swit4(){
+document.getElementById('KARAOKE').src = "KARAOKE_TEST.zip_r1_c1.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c2').src = "KARAOKE_TEST.zip_r1_c2.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c3').src = "KARAOKE_TEST.zip_r1_c3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c4').src = "KARAOKE_TEST.zip_r1_c4_f3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c6').src = "KARAOKE_TEST.zip_r1_c6.gif";
+//get_color(3);
+
+}
+function swit5(){
+document.getElementById('KARAOKE').src = "KARAOKE_TEST.zip_r1_c1.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c2').src = "KARAOKE_TEST.zip_r1_c2.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c3').src = "KARAOKE_TEST.zip_r1_c3.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c4').src = "KARAOKE_TEST.zip_r1_c4.gif";
+document.getElementById('KARAOKE_TEST.zip_r1_c6').src = "KARAOKE_TEST.zip_r1_c6_f3.gif";
+}
+function Loc() {
+parent.mainframe.location = "LyricListner.asp"
+
+parent.mainframe.lyric.location = "sync.asp?file=" + parent.mainframe.content.document.mp3.value;
+
+}
+function MM_preloadImages() { //v3.0
+  var d=document; 
+  if(d.images){ 
+  		if(!d.MM_p) 
+  		d.MM_p=new Array();
+    	var i,j=d.MM_p.length,a=MM_preloadImages.arguments; 
+    	for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ 
+    d.MM_p[j]=new Image; 
+    d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+function loadsync() {
+var MP3 = parent.mainframe.content.document.getElementById("mp3").value;
+if ( MP3 = "") {
+parent.mainframe.location = "SyncListner.asp"; 
+}else{
+parent.mainframe.content.location = "playerappletsync.asp?index=" + parent.mainframe.content.document.getElementById("mp3").selectedIndex; 
+parent.mainframe.lyric.location = "sync.asp?FID=" + parent.mainframe.content.document.getElementById("mp3").value; 
+
+
+}
+}
+function loadplayer() {
+var MP3 = parent.mainframe.content.document.getElementById("mp3").value;
+if ( MP3 = "") {
+parent.mainframe.location = 'viewerframe.asp'; 
+}else{
+parent.mainframe.content.location = "viewer.asp?index=" + parent.mainframe.content.document.getElementById("mp3").selectedIndex; 
+parent.mainframe.lyric.location = "kara.asp?FID=" + parent.mainframe.content.document.getElementById("mp3").value; 
+}
+}
+
+ -->
+</script>
+<base target="_self">
+</head>
+<body name="body" id="body" bgcolor="#6666FF" onLoad="MM_preloadImages('KARAOKE_TEST.zip_r1_c1_f3.gif',
+'KARAOKE_TEST.zip_r1_c1_f2.gif','KARAOKE_TEST.zip_r1_c2_f3.gif','KARAOKE_TEST.zip_r1_c2_f2.gif',
+'KARAOKE_TEST.zip_r1_c3_f3.gif','KARAOKE_TEST.zip_r1_c3_f2.gif','KARAOKE_TEST.zip_r1_c4_f3.gif',
+'KARAOKE_TEST.zip_r1_c4_f2.gif','KARAOKE_TEST.zip_r1_c6_f3.gif','KARAOKE_TEST.zip_r1_c6_f2.gif');">
+<form name='head' id='head'>
+</form>
+<table width="970">
+	<tr>
+		<td width="485">
+        <img src="images\karaokemonster_logo.gif" width="275" height="97"></td>
+  <td width="475"><table border="0" height="1">
+    <tr> 
+          <td width="70%" height="1">
+      <table width="459" border="0" cellpadding="0" cellspacing="0" bgcolor='#6666FF' height="93">
+          <!-- fwtable fwsrc="karaokeheader.png" fwbase="KARAOKE_TEST.zip_TEST.gif" fwstyle="Dreamweaver" fwdocid = "742308039" fwnested="0" -->
+          <tr> 
+    
+            <td width="73" height="93"><a target="_parent" onClick='MM_nbGroup("down","navbar1",
+			"KARAOKE_TEST.zip_r1_c1","KARAOKE_TEST.zip_r1_c1_f3.gif",1); parent.mainframe.location =
+			 "../../../Upload.asp"; swit1();' onMouseOver="MM_nbGroup('over','KARAOKE',
+			 'KARAOKE_TEST.zip_r1_c1_f2.gif','KARAOKE_TEST.zip_r1_c1_f3.gif',1);" 
+			 onMouseOut="MM_nbGroup('out');">
+            <img name="KARAOKE" id="KARAOKE" src="KARAOKE_TEST.zip_r1_c1.gif" border="0" alt="" width="75" height="80"></a></td>
+			
+            <td width="86" height="93" colspan="2"><a target="_parent" 
+			onClick='MM_nbGroup("down","navbar1","KARAOKE_TEST.zip_r1_c2","KARAOKE_TEST.zip_r1_c2_f3.gif",1); 
+			swit2(); Loc(); ' onMouseOver="MM_nbGroup('over','KARAOKE_TEST.zip_r1_c2','KARAOKE_TEST.zip_r1_c2_f2.gif',
+			'KARAOKE_TEST.zip_r1_c2_f3.gif',1);" onMouseOut="MM_nbGroup('out');">
+            <img name="KARAOKE_TEST.zip_r1_c2" id="KARAOKE_TEST.zip_r1_c2" src="KARAOKE_TEST.zip_r1_c2.gif" border="0" width="85" height="80" ></a></td>
+			
+            <td width="83" height="93" colspan="2"><a href="javascript:;" target="_top" onClick='MM_nbGroup(
+			"down","navbar1","KARAOKE_TEST.zip_r1_c3","KARAOKE_TEST.zip_r1_c3_f3.gif",1); swit3(); loadsync();' onMouseOver="MM_nbGroup('over','KARAOKE_TEST.zip_r1_c3',
+			'KARAOKE_TEST.zip_r1_c3_f2.gif','KARAOKE_TEST.zip_r1_c3_f3.gif',1);" onMouseOut="MM_nbGroup('out');">
+            <img name="KARAOKE_TEST.zip_r1_c3" id="KARAOKE_TEST.zip_r1_c3" src="KARAOKE_TEST.zip_r1_c3.gif" 
+			border="0" width="82" height="80"></a></td>
+			
+            <td width="83" height="93"><a target="_top" onClick="loadplayer(); swit4(); MM_nbGroup('down','navbar1','KARAOKE_TEST.zip_r1_c4'
+			,'KARAOKE_TEST.zip_r1_c4_f3.gif',1);" 
+			onMouseOver="MM_nbGroup('over','KARAOKE_TEST.zip_r1_c4','KARAOKE_TEST.zip_r1_c4_f2.gif',
+			'KARAOKE_TEST.zip_r1_c4_f3.gif',1);" onMouseOut="MM_nbGroup('out');">
+            <img name="KARAOKE_TEST.zip_r1_c4" id="KARAOKE_TEST.zip_r1_c4" src="KARAOKE_TEST.zip_r1_c4.gif" 
+			border="0" width="84" height="80" ></a></td>
+			
+            <td width="120" height="93"><a href="" target="_blank" onClick=
+			"MM_nbGroup('down','navbar1','KARAOKE_TEST.zip_r1_c6','KARAOKE_TEST.zip_r1_c6_f3.gif',1);" 
+			onMouseOver="MM_nbGroup('over','KARAOKE_TEST.zip_r1_c6','KARAOKE_TEST.zip_r1_c6_f2.gif',
+			'KARAOKE_TEST.zip_r1_c6_f3.gif',1);" onMouseOut="MM_nbGroup('out');">
+            <img name="KARAOKE_TEST.zip_r1_c6" id="KARAOKE_TEST.zip_r1_c6" src="KARAOKE_TEST.zip_r1_c6.gif" 
+			border="0" width="74" height="80"></a></td>
+            <td width="15" height="93">
+            <img src="images/spacer.gif" width="1" height="100" border="0" alt=""></td>
+          </tr>
+        </table>
+        <input type='hidden' value='a' name='currentpage' id='currentpage' onLoad="switchimg()">
+        </td>
+        <td><img src="images\header_monster.gif" width="169" height="97"></td>
+    </tr>
+  </table></td>
+  </tr>
+  </table>
+  <div style="border-bottom: 2px solid #A91905;font-size:16; width:843; height:40">
+</div>
+</form>
+</body>
+</html>
