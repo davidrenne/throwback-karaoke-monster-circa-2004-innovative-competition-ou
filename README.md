@@ -14,6 +14,8 @@ It's old school crap code with a hilarious ASP and MSACCESS database, but maybe 
 
 ## [The Deck](https://docs.google.com/presentation/d/1CWpgiDyyOa4kTY7x_Dn04d0BG8rYU77B1HCtEEP-pAw/edit?usp=sharing) Andy and I presented
 
-Sadly we lost the recording of the live event because I was a nice guy and recorded someone else's presentation.
+Sadly we lost the recording of the live event because I was a nice guy and recorded someone else's presentation and I didnt have a plug in my handicam recorder and the battery died.
 
-The database MSACCESS we had is long gone but you can take the idea and run with it.
+The database MSACCESS we had is long gone but you can take the idea and run with it and ressurrect the SQL calls necessary to render a modern app.
+
+Please fork and delete everything and start from scratch!!
